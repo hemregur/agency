@@ -1,0 +1,207 @@
+ 
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (max-width: 620px) {
+ 
+    #futureParent {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 1.2rem;
+        grid-row-gap: 1.2rem;
+        margin:3rem;
+    } 
+    #div1 { grid-area: unset;}
+    #div2 { grid-area: unset;}
+    #div3 { grid-area: unset;}
+    #div4 { grid-area: unset;}
+    #div5 { grid-area: unset;}
+    .futureCard{
+        height: 200px;
+    }
+
+    #experiences{
+        flex-direction: column;
+        align-items: center;
+    }
+    #experiences #left{ 
+        width: 90%;
+        height: 300px;
+    }
+    #experiences #left img{
+        height: 400px;
+        object-position: -60px -10px;
+    }
+    #experiencesTitle h2{
+        text-align: center;
+    }
+    #experiencesDescription{
+       text-align: center;
+    }
+    #experiencesList h3{
+        text-align: center;
+    }
+    #experiences #right{ 
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;          
+    }
+    #experiencesList{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #analyticsList{
+        flex-direction: column;
+        align-items: center;
+    }
+    .analyticsItem{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        border-left:0px;
+        border-bottom: 2px solid var(--strong);
+        padding: 2rem;
+    }    
+    .analyticsItem:last-child{
+        border-bottom: 0px;
+    }
+    .analyticsItem h3{
+        font-size: 3rem!important;
+    }
+    .analyticsItem p{
+        font-size: 1.2rem!important;
+    }
+    #plansIn{
+        align-items: center;
+        flex-direction: column!important;
+    }
+    .plansItem{
+        width: 80%;
+        margin: .5rem 0;
+    }
+    .planContent{
+        margin: 1rem 0 0 0 ;
+        width: 90%;
+    }
+    #faq{
+        flex-direction: column;
+        width: 100%;
+    }
+    #faqIn{
+        flex-direction: column;
+        margin:2rem 1rem 1rem 1rem;
+    }
+    #faqLeft{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    #faqTitle h2{
+        font-size: 2.3rem;
+    }
+    .faqListBtn{
+        display:block;
+    }
+    #faqRight{
+        width: 100%; 
+        margin: 0; 
+    } 
+    #footerIn{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 3rem 2rem 2rem 0rem;
+    }
+    #footerBottom{
+        flex-direction: column;
+        align-items: center;
+    }
+    #footerBottom #left{
+        margin: 2rem;
+    }
+    #navbar{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        background-color: var(--white);
+        margin: 0 ;
+        padding: 0;
+         
+    }
+    #mobileNavBtn{
+        display: block;
+    } 
+    #navigator{
+        display: none;
+    }
+    #features{
+        display: none;
+    }
+}
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media (min-width: 620px) and (max-width: 768px)  {
+    #futureParent {
+        width: 70%;
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 1.2rem;
+        grid-row-gap: 1.2rem;
+        margin:3rem;
+        }
+        #div1 { grid-area: 1 / 1 / 2 / 2;}
+        #div2 { grid-area: 1 / 2 / 2 / 3;}
+        #div3 { grid-area: 2 / 1 / 3 / 2;}
+        #div4 { grid-area: 3 / 1 / 4 / 3;}
+        #div5 { grid-area: 2 / 2 / 3 / 3;}
+
+        #experiences{
+            flex-direction: column;
+            align-items: center;
+        }
+        #experiences #left{ 
+            width: 90%;
+        }
+        #experiences #right{ 
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;          
+        }
+        #experiencesList{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #plansIn{
+            align-items: center;
+            flex-direction: column!important;
+        }
+        .plansItem{
+            width: 80%;
+            margin: .5rem 0;
+        }
+        .planContent{
+            margin: 1rem 0 0 0 ;
+            width: 86%;
+        }
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .example {background: orange;}
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .example {background: pink;}
+  }
